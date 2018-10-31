@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VirtualScrollComponent implements OnInit {
 
+  numbers: number[] = [];
   constructor() { }
 
   ngOnInit() {
+    for (let i = 0; i < 10000; i++) {
+      this.numbers.push(i);
+    }
   }
 
 }

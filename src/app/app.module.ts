@@ -1,3 +1,4 @@
+import { ScrollingModule } from '@angular/cdk/scrolling';
 import { NgModule } from '@angular/core';
 import { MatButtonModule } from '@angular/material';
 import { BrowserModule } from '@angular/platform-browser';
@@ -6,7 +7,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DragDropComponent } from './drag-drop/drag-drop.component';
 import { VirtualScrollComponent } from './virtual-scroll/virtual-scroll.component';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,8 +16,9 @@ import { VirtualScrollComponent } from './virtual-scroll/virtual-scroll.componen
   imports: [
     BrowserModule,
     MatButtonModule,
+    ScrollingModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
-    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
