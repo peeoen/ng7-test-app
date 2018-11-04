@@ -1,3 +1,4 @@
+import { DragDropModule } from '@angular/cdk/drag-drop';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 import { NgModule } from '@angular/core';
 import { MatButtonModule } from '@angular/material';
@@ -16,6 +17,7 @@ import { VirtualScrollComponent } from './virtual-scroll/virtual-scroll.componen
   imports: [
     BrowserModule,
     MatButtonModule,
+    DragDropModule,
     ScrollingModule,
     BrowserAnimationsModule,
     AppRoutingModule,
